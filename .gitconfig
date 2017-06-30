@@ -1,0 +1,57 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[alias]
+    br = branch -v
+    co = checkout
+    ci = commit
+    di = diff
+    st = status
+
+    # Just ammend it, it's cool
+    amq = commit --amend -C HEAD
+
+    # Commit changes on *top* of current head as a checkpoint commit
+    cp = commit -am 'cp'
+
+    # Grep with color and line numbers
+    gr = grep -n --color
+
+    # Files In Commit
+    fic = !git show --pretty="format:" --name-only | tail -n +2
+
+
+# Dear god, please change these if you borrow my gitconfig
+[user]
+    name  = <SET THE NAME> 
+    email = <SET EMAIL>
+
+[log]
+    date = local
+
+# Use only for black background terminal
+[color "branch"]
+    current = yellow reverse
+    local = yellow 
+    remote = green
+
+[color "diff"]
+    plain = white
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red blink
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = vim
+[gc]
+    auto = 0
