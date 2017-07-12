@@ -20,7 +20,7 @@
     gr = grep -n --color
 
     # Files In Commit
-    fic = !git show --pretty="format:" --name-only | tail -n +2
+    fic = !git show --pretty="format:" --name-only | tail -n +1
 
 
 # Dear god, please change these if you borrow my gitconfig
